@@ -10,6 +10,11 @@
 				</div>
 				<h2><a class="article-title" href="{% url 'post-detail' dat.id %}">{{ dat.title }}</a></h2>
 				<p class="article-content">{{ dat.content }}</p>
+				<p>
+				<video width="600px" height="300px" controls="">
+				<source src="{{ dat.videoUpload.url }}" type="video/mp4">
+			</video>
+				</p>
 			</div>
 		</article>
 	{% endfor %}

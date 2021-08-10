@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
+    videoUpload = models.FileField(default='default.mp4', upload_to='media/')
     date_posted = models.DateTimeField(default=timezone.now)
     auther = models.ForeignKey(User, on_delete=models.CASCADE)
 
