@@ -25,7 +25,7 @@ SECRET_KEY = 'zw9ic#w=(@#v^fdk)v9f_2!$n8$rx5#&rktwmcrf^d(((%#g9r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,14 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django.contrib.sites'
-    # 'user',
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount',
-    #
-    # 'allauth.socialaccount.providers.google',
-    # 'allauth.socialaccount.providers.facebook',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'django_project.urls'
@@ -77,6 +70,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
@@ -144,5 +138,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = ('shahzaibrind86@gmail.com')
 EMAIL_HOST_PASSWORD = ('')
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-# SITE_ID = 1

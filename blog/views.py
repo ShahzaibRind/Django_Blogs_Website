@@ -85,6 +85,14 @@ class LatestListView(ListView):
     paginate_by = 3
 
 
+# def upload(request):
+#     if request.method == 'POST':
+#         file = request.FILIES('videoUpload')
+#         with open(f'media/uploads/{file.name}', 'wb+') as destination:
+#             for chunk in file.chunk():
+#                 destination.write(chunk)
+
+
 def annoucements(request):
     return render(request, 'blog/annoucements.html', {'title':'Annoucements'})
 
